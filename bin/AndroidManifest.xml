@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ifeeds"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ifeeds.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.PasswordResetActivity"
+            android:label="@string/title_activity_password_reset" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.ListWebsitesActivity"
+            android:label="@string/title_activity_list_websites" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.Open"
+            android:label="@string/title_activity_open" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.OpenFile"
+            android:label="@string/title_activity_open_file" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.OpenURL"
+            android:label="@string/title_activity_open_url" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.ListRSSItemsActivity"
+            android:label="@string/title_activity_list_rssitems" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.AddNewSiteActivity"
+            android:label="@string/title_activity_add_new_site" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.DisplayWebPageActivity"
+            android:label="@string/title_activity_display_web_page" >
+        </activity>
+        <activity
+            android:name="com.example.ifeeds.Trend"
+            android:label="@string/title_activity_trend" >
+        </activity>
+    </application>
+
+</manifest>

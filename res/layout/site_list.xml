@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    
+    <!-- Header -->
+ 
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@id/layoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#bababa"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" 
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"/>
+
+    <include
+        android:layout_above="@+id/list"
+        android:layout_alignParentLeft="true"
+        layout="@layout/header" />
+
+    <ImageButton
+        android:id="@+id/trendBtn"
+        android:layout_width="100px"
+        android:layout_height="50dip"
+        android:layout_alignBottom="@+id/resetBtn"
+        android:layout_toLeftOf="@+id/resetBtn"
+        android:src="@drawable/trend" />
+
+    <ImageButton
+        android:id="@+id/openBtn"
+        android:layout_width="100px"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/open1" />
+
+    <ImageButton
+        android:id="@+id/resetBtn"
+        android:layout_width="100px"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/openBtn"
+        android:src="@drawable/key" />
+ 
+</RelativeLayout>

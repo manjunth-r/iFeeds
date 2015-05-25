@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dip"
+        android:text="@string/enter_url"
+        android:textColor="#007FFF"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblUrl"
+        android:layout_marginTop="26dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:text="http://www."
+        android:inputType="textUri"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtUrl"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSubmit"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/btnSubmit"
+        android:text="@string/cancel"
+        android:windowSoftInputMode="stateVisible|adjustPan" />
+
+    <EditText
+        android:id="@+id/rssURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+		android:background="#ffffff"
+		android:hint="Enter Direct RSS URL"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn1Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn1Submit"
+        android:layout_alignLeft="@+id/btnCancel"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/btn1Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rssURL"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:text="@string/submit" />
+
+</RelativeLayout>

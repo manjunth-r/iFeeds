@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iFeeds</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello World</string>
+    <string name="enter_url">Enter Url (http://www.abc.com) :</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint">Enter Website URL here...</string>
+    <string name="title_activity_display_web_page">DisplayWebPageActivity</string>
+    <string name="title_activity_open_file">OpenFile</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_open_url">OpenURL</string>
+    <string name="title_activity_login">Login</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="title_activity_password_reset">PasswordResetActivity</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_list_websites">ListWebsitesActivity</string>
+    <string name="open">Open</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="title_activity_open">Open</string>
+    <string name="title_activity_list_rssitems">ListRSSItemsActivity</string>
+    <string name="title_activity_add_new_site">AddNewSiteActivity</string>
+    <string name="title_activity_trend">Trend</string>
+
+</resources>
